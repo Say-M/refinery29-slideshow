@@ -29,9 +29,15 @@ body {
 }
 
 .slideshow-header .left-arrow,
-.slideshow-header .right-arrow {
+.slideshow-header .right-arrow,
+.slideshow-header .begin-slideshow {
   padding: 1rem 1.5rem;
   cursor: pointer;
+}
+
+.slideshow-header .begin-slideshow {
+  background: #000000;
+  color: #fff;
 }
 
 .slideshow-header .middle-text {
@@ -45,6 +51,7 @@ body {
           justify-content: space-between;
   padding: 1rem;
   width: 100%;
+  position: relative;
 }
 
 .slideshow-header .middle-text .all-slides {
@@ -53,6 +60,17 @@ body {
 
 .slideshow-header .middle-text p {
   margin-bottom: 0;
+}
+
+.slideshow-header .middle-text .start {
+  background: #000000;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
 }
 
 .slideshow-body {

@@ -26,13 +26,23 @@ $(".left-arrow").click(function () {
                 $(this).hide();
             }
         })
+    } else {
+        $(".inti-slideshow").show();
+        $(".main-slideshow").hide();
     }
 })
+$(".slide-start").click(function () {
+    $(".inti-slideshow").hide();
+    $(".main-slideshow").show();
+})
+
 $(".all-slides").click(function () {
     $(".main-slideshow").hide();
+    $(".inti-slideshow").hide();
     $(".sec-slides").show();
 })
 $(".back").click(function () {
+    $(".inti-slideshow").hide();
     $(".main-slideshow").show();
     $(".sec-slides").hide();
 })
